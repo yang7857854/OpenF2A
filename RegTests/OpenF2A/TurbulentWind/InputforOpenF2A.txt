@@ -1,0 +1,26 @@
+! This is an input file of CAT4IFES (Coupled Analysis Tool for Integrated Floating Rnergy Systems) that consists of a floating offshore wind turbine (FOWT)                                              
+! and several(<10) tidal turbines. This file is specified for the IFES model that contains one wind turbine and two tidal turbines supported by the OC5 DeepCWind platform.                              
+! Do not remove anyline below. Three lines of comments in total.                                                                                                                                         
+--------------- FAST Configuration ------------------                                                                                                                                                    
+1									- NumWTs			! Number of wind turbines incorprated into the modelling. The Prifile, IdStr and Offsets will be read by the code in a loop.                      
+"5MW_OC4Semi_F2A_Turb_11.4_SW.fst"	    - Prifile(i)		! Primary input file of the (ith) wind turbine for OpenFAST                                                                                   
+1					- IdStr(i)		! Index of structure modelled in AQWA that connects to the ith wind turbine                                                                                           
+0.0   0.0   0.0			- OffsetWT  1:3, i  	! Offset of the ith wind turbine reference coordinate system 
+True			- PtfmRestoreFlag  ! Flag for considering the restoring forces on platform when predicting wind turbine dynamics in OpenFAST
+     1.3858E+04 - PtfmVol0       - Displaced volume of water when the body is in its undisplaced position (m^3) 
+             0  - PtfmCOBxt      - The xt offset of the center of buoyancy (COB) from (0,0) (meters) 
+             0  - PtfmCOByt      - The yt offset of the center of buoyancy (COB) from (0,0) (meters)                    
+0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00		- PtfmStffMat (6*6 matrix of the platform restoring matrix, referred to Origin[0,0,0])
+0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00
+0.000000E+00	0.000000E+00	3.755566E+06	1.581144E+04	7.365337E+03	0.000000E+00
+0.000000E+00	0.000000E+00	1.581144E+04	-3.839163E+08	3.221284E+03	-4.898325E+05
+0.000000E+00	0.000000E+00	7.365337E+03	3.221284E+03	-3.839163E+08	-1.298354E+06
+0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00	0.000000E+00
+6.4874E+06	0.0000E+00	-1.6091E+01	0.0000E+00	-8.5109E+07	0.0000E+00   - PtfmAddedMassMat (6*6 matrix of the platform restoring matrix, referred to platform CM[0,0,0])
+0.0000E+00	6.4875E+06	0.0000E+00	8.5108E+07	0.0000E+00	-4.0486E+02
+3.0995E+00	0.0000E+00	1.4699E+07	0.0000E+00	-1.5790E+03	0.0000E+00
+0.0000E+00	8.5107E+07	0.0000E+00	6.0364E+09	0.0000E+00	-3.2121E+04
+-8.5106E+07	0.0000E+00	2.5945E+03	0.0000E+00	6.0361E+09	0.0000E+00
+0.0000E+00	-1.1377E+03	0.0000E+00	-6.4238E+03	0.0000E+00	4.8691E+09                                                                                                                                                                                 
+---------------- END OF THE INPUT -------------------  
+
