@@ -44,10 +44,13 @@ The following publications are for your information when you need a reference to
 7. Yang, Y., Shi, Z., Fu, J., Ma, L., Yu, J., Fang, F., ... & Yang, W. (2023). Effects of tidal turbine number on the performance of a 10 MW-class semi-submersible integrated floating wind-current system. Energy, 285, 128789.
 8. Yang, Y., Bashir, M., Michailides, C., Li, C., & Wang, J. (2020). Development and application of an aero-hydro-servo-elastic coupling framework for analysis of floating offshore wind turbines. Renewable Energy, 161, 606-625.
 
+# Acknowledgement
+I want to express my sincere gratitude to Dr Yuming Zhang from Tianjin University, who confirmed the code position for transferring platform motions in ElastoDyn subroutines.
+
 # Contact
 Please do not hesitate to contact me regarding any issues with OpenF2A by sending emails to: yangyang1@nbu.edu.cn.  
 
-We hope OpenF2A will contribute to your research, which is the greatest desire in our heart. 
+We hope OpenF2A will contribute to your research, which is the greatest desire in our hearts. 
 
 Kind regards,
 
