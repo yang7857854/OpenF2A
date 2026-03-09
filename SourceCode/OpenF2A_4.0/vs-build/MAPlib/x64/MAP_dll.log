@@ -1,0 +1,25 @@
+﻿  bstraux.c
+H:\StudyJeyla\Research\NWTC\OpenFAST\v4.0.0\openfast-main\modules\map\src\bstring\bstraux.c(1004,26): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+H:\StudyJeyla\Research\NWTC\OpenFAST\v4.0.0\openfast-main\modules\map\src\bstring\bstraux.c(1017,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  bstrlib.c
+H:\StudyJeyla\Research\NWTC\OpenFAST\v4.0.0\openfast-main\modules\map\src\bstring\bstrlib.c(367,32): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  dpmpar.c
+  enorm.c
+  enorm_u.c
+  lmder.c
+  lmpar.c
+  qrfac.c
+  qrsolv.c
+  freedata.c
+  jacobian.c
+  lineroutines.c
+  mapapi.c
+H:\StudyJeyla\Research\NWTC\OpenFAST\v4.0.0\openfast-main\modules\map\src\mapapi.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+  maperror.c
+  mapinit.c
+  numeric.c
+  outputstream.c
+  residual.c
+  simclist.c
+  lmroutines.cc
+  MAP_dll.vcxproj -> H:\StudyJeyla\Research\NWTC\OpenFAST\v4.0.0\openfast-main\build\bin\MAP_x64.lib

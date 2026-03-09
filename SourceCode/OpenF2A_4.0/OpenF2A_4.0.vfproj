@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeDynamicLibrary" ProjectCreator="Intel Fortran" Keyword="Dll" Version="11.0" ProjectIdGuid="{EF67F0B6-E841-4B58-8CEA-C33F07806508}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" UseCompiler="ifortCompiler" ConfigurationType="typeDynamicLibrary">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows" LinkDLL="true"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|Win32" UseCompiler="ifortCompiler" ConfigurationType="typeDynamicLibrary">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" SuppressStartupBanner="true" SubSystem="subSystemWindows" LinkDLL="true"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Debug|x64" UseCompiler="ifortCompiler" ConfigurationType="typeDynamicLibrary">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows" LinkDLL="true"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|x64" UseCompiler="ifortCompiler" TargetName="user_force64" ConfigurationType="typeDynamicLibrary">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" HeapArrays="1000" Preprocess="preprocessYes" StandardWarnings="standardWarningsF03" DisableSpecificDiagnostics="5268,5199" UseMkl="mklSequential"/>
+			<Tool Name="VFLinkerTool" SuppressStartupBanner="true" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="MAP_$(PlatformName).lib"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+			<Filter Name="Aero">
+				<Filter Name="AeroDisk">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\aerodisk\src\AeroDisk_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\aerodisk\src\AeroDisk.f90"/>
+					<File RelativePath=".\modules\aerodisk\src\AeroDisk_IO.f90"/>
+					<File RelativePath=".\modules\aerodisk\src\AeroDisk_Output_Params.f90"/>
+				</Filter>
+				<Filter Name="AeroDyn">
+					<Filter Name="AeroAcoustics">
+						<File RelativePath=".\modules\aerodyn\src\AeroAcoustics.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\AeroAcoustics_IO.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\AeroAcoustics_TNO.f90"/>
+					</Filter>
+					<Filter Name="FVW">
+						<File RelativePath=".\modules\aerodyn\src\FVW.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\FVW_BiotSavart.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\FVW_IO.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\FVW_Subs.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\FVW_Tests.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\FVW_VortexTools.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\FVW_Wings.f90"/>
+					</Filter>
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\aerodyn\src\AeroAcoustics_Types.f90"/>
+						<File RelativePath=".\modules\aerodyn\src\AeroDyn_Inflow_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\aerodyn\src\AeroDyn_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\aerodyn\src\AirfoilInfo_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\aerodyn\src\BEMT_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\aerodyn\src\DBEMT_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\aerodyn\src\FVW_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\aerodyn\src\UnsteadyAero_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\aerodyn\src\AeroDyn.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\AeroDyn_AllBldNdOuts_IO.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\AeroDyn_Inflow.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\AeroDyn_IO.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\AeroDyn_IO_Params.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\AirfoilInfo.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\BEMT.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\BEMTUncoupled.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\DBEMT.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\mod_root1dim.f90"/>
+					<File RelativePath=".\modules\aerodyn\src\UnsteadyAero.f90"/>
+				</Filter>
+				<Filter Name="ExtLoads">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\extloads\src\ExtLoads_Types.f90"/>
+						<File RelativePath=".\modules\extloads\src\ExtLoadsDX_Types.f90"/>
+					</Filter>
+					<File RelativePath=".\modules\extloads\src\ExtLoads.f90"/>
+				</Filter>
+			</Filter>
+			<Filter Name="BeamDyn">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\beamdyn\src\BeamDyn_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\beamdyn\src\BeamDyn.f90"/>
+				<File RelativePath=".\modules\beamdyn\src\BeamDyn_BldNdOuts_IO.f90"/>
+				<File RelativePath=".\modules\beamdyn\src\BeamDyn_IO.f90"/>
+				<File RelativePath=".\modules\beamdyn\src\BeamDyn_Subs.f90"/>
+			</Filter>
+			<Filter Name="ElastoDyn">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\elastodyn\src\ElastoDyn_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\elastodyn\src\ED_UserSubs.f90"/>
+				<File RelativePath=".\modules\elastodyn\src\ElastoDyn.f90"/>
+				<File RelativePath=".\modules\elastodyn\src\ElastoDyn_AllBldNdOuts_IO.f90"/>
+				<File RelativePath=".\modules\elastodyn\src\ElastoDyn_IO.f90"/>
+			</Filter>
+			<Filter Name="F2A">
+				<File RelativePath=".\modules\f2a\F2ASubs.f90">
+				</File>
+				<File RelativePath=".\modules\f2a\F2ATypes.f90">
+				</File>
+				<File RelativePath=".\modules\f2a\FAST_Prog.f90">
+				</File>
+				<File RelativePath=".\modules\f2a\user_force.f90">
+				</File>
+			</Filter>
+			<Filter Name="FAST">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\openfast-library\src\FAST_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<Filter Name="SteadyStateSolver">
+					<File RelativePath=".\modules\openfast-library\src\FAST_SS_Solver.f90"/>
+					<File RelativePath=".\modules\openfast-library\src\FAST_SS_Subs.f90"/>
+				</Filter>
+				<File RelativePath=".\modules\openfast-library\src\FAST_Lin.f90"/>
+				<File RelativePath=".\modules\openfast-library\src\FAST_Mods.f90"/>
+				<File RelativePath=".\modules\openfast-library\src\FAST_Solver.f90"/>
+				<File RelativePath=".\modules\openfast-library\src\FAST_Subs.f90"/>
+			</Filter>
+			<Filter Name="HydroDyn">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\hydrodyn\src\Conv_Radiation_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\hydrodyn\src\HydroDyn_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\hydrodyn\src\Morison_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\hydrodyn\src\SS_Excitation_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\hydrodyn\src\SS_Radiation_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\hydrodyn\src\WAMIT2_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\hydrodyn\src\WAMIT_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\hydrodyn\src\Conv_Radiation.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\HydroDyn.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\HydroDyn_Input.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\HydroDyn_Output.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\Morison.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\Morison_Output.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\SS_Excitation.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\SS_Radiation.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\WAMIT.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\WAMIT2.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\WAMIT_Interp.f90"/>
+				<File RelativePath=".\modules\hydrodyn\src\YawOffset.f90"/>
+			</Filter>
+			<Filter Name="Ice">
+				<Filter Name="IceDyn">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\icedyn\src\IceDyn_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\icedyn\src\IceDyn.f90"/>
+				</Filter>
+				<Filter Name="IceFloe">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\icefloe\src\icefloe\IceFloe_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\icefloe\src\icefloe\coupledCrushing.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\crushingIEC.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\crushingISO.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\IceFlexBase.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\IceFlexIEC.f90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\IceFlexISO.f90"/>
+					<File RelativePath=".\modules\icefloe\src\interfaces\FAST\IceFloe.f90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\IceFloeBase.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\iceInput.f90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\iceLog.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\intermittentCrushing.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\lockInISO.F90"/>
+					<File RelativePath=".\modules\icefloe\src\icefloe\randomCrushing.F90"/>
+				</Filter>
+			</Filter>
+			<Filter Name="Inflow">
+				<Filter Name="ExternalInflow Integration">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\externalinflow\src\ExternalInflow_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\externalinflow\src\ExternalInflow.f90"/>
+				</Filter>
+				<Filter Name="InflowWind">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\inflowwind\src\IfW_FlowField_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\inflowwind\src\InflowWind_IO_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\inflowwind\src\InflowWind_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\inflowwind\src\Lidar_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\inflowwind\src\IfW_FlowField.f90"/>
+					<File RelativePath=".\modules\inflowwind\src\InflowWind.f90"/>
+					<File RelativePath=".\modules\inflowwind\src\InflowWind_IO.f90"/>
+					<File RelativePath=".\modules\inflowwind\src\InflowWind_Subs.f90"/>
+					<File RelativePath=".\modules\inflowwind\src\Lidar.f90"/>
+				</Filter>
+			</Filter>
+			<Filter Name="Mooring Lines">
+				<Filter Name="FEAMooring">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\feamooring\src\FEAMooring_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\feamooring\src\FEAM.f90"/>
+				</Filter>
+				<Filter Name="MAP">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\map\src\MAP_Fortran_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\map\src\MAP_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\map\src\map.f90"/>
+				</Filter>
+				<Filter Name="MoorDyn">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\moordyn\src\MoorDyn_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn.f90"/>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn_Body.f90"/>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn_IO.f90"/>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn_Line.f90"/>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn_Misc.f90"/>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn_Point.f90"/>
+					<File RelativePath=".\modules\moordyn\src\MoorDyn_Rod.f90"/>
+				</Filter>
+				<Filter Name="OrcaFlex">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\orcaflex-interface\src\OrcaFlexInterface_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\orcaflex-interface\src\OrcaFlexInterface.F90"/>
+				</Filter>
+			</Filter>
+			<Filter Name="NWTC_Library">
+				<Filter Name="NetLib">
+					<Filter Name="FFTPACK">
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\fftpack\fftpack4.1.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<Filter Name="Polynomial">
+						<File RelativePath=".\modules\nwtc-library\src\Polynomial\quartic.f90"/>
+					</Filter>
+					<Filter Name="ScaLAPACK">
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\scalapack\dlasrt2.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\scalapack\slasrt2.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<Filter Name="SLATEC">
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\d1mach.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\dqk61.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\fdump.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\i1mach.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\j4save.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\qk61.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\r1mach.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\xercnt.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\xerhlt.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\xermsg.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\xerprn.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\xersve.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+						<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\xgetua.f">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Release|Win32">
+								<Tool Name="VFFortranCompilerTool" StandardWarnings="standardWarningsNone" DisableSpecificDiagnostics="6717"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\nwtc-library\src\NetLib\fftpack\NWTC_FFTPACK.f90"/>
+					<File RelativePath=".\modules\nwtc-library\src\NetLib\lapack\NWTC_LAPACK.f90"/>
+					<File RelativePath=".\modules\nwtc-library\src\NetLib\scalapack\NWTC_ScaLAPACK.f90"/>
+					<File RelativePath=".\modules\nwtc-library\src\NetLib\slatec\NWTC_SLATEC.f90"/>
+				</Filter>
+				<Filter Name="RanLux">
+					<File RelativePath=".\modules\nwtc-library\src\ranlux\RANLUX.f90"/>
+				</Filter>
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\nwtc-library\src\NWTC_Library_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\nwtc-library\src\JSON.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\ModMesh.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\ModMesh_Mapping.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\ModMesh_Types.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\ModReg.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\NWTC_Base.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\NWTC_IO.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\NWTC_Library.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\NWTC_Num.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\NWTC_RandomNumber.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\NWTC_Str.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\SingPrec.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\SysIVF.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\VTK.f90"/>
+				<File RelativePath=".\modules\nwtc-library\src\YAML.f90"/>
+			</Filter>
+			<Filter Name="SeaState">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\seastate\src\Current_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\seastate\src\SeaSt_WaveField_Types.f90"/>
+					<File RelativePath=".\modules\seastate\src\SeaState_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\seastate\src\Waves2_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\seastate\src\Waves_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\seastate\src\Current.f90"/>
+				<File RelativePath=".\modules\seastate\src\SeaSt_WaveField.f90"/>
+				<File RelativePath=".\modules\seastate\src\SeaState.f90"/>
+				<File RelativePath=".\modules\seastate\src\SeaState_Input.f90"/>
+				<File RelativePath=".\modules\seastate\src\SeaState_Output.f90"/>
+				<File RelativePath=".\modules\seastate\src\UserWaves.f90"/>
+				<File RelativePath=".\modules\seastate\src\Waves.f90"/>
+				<File RelativePath=".\modules\seastate\src\Waves2.f90"/>
+			</Filter>
+			<Filter Name="ServoDyn">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\servodyn\src\ServoDyn_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+					<File RelativePath=".\modules\servodyn\src\StrucCtrl_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\servodyn\src\BladedInterface.F90"/>
+				<File RelativePath=".\modules\servodyn\src\BladedInterface_EX.F90"/>
+				<File RelativePath=".\modules\servodyn\src\PitchCntrl_ACH.f90"/>
+				<File RelativePath=".\modules\servodyn\src\ServoDyn.f90"/>
+				<File RelativePath=".\modules\servodyn\src\ServoDyn_IO.f90"/>
+				<File RelativePath=".\modules\servodyn\src\StrucCtrl.f90"/>
+				<File RelativePath=".\modules\servodyn\src\UserSubs.f90"/>
+				<File RelativePath=".\modules\servodyn\src\UserVSCont_KP.f90"/>
+			</Filter>
+			<Filter Name="SimpleElastoDyn">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\simple-elastodyn\src\SED_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\simple-elastodyn\src\SED.f90"/>
+				<File RelativePath=".\modules\simple-elastodyn\src\SED_IO.f90"/>
+				<File RelativePath=".\modules\simple-elastodyn\src\SED_Output_Params.f90"/>
+			</Filter>
+			<Filter Name="Substructure">
+				<Filter Name="External Platform">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\extptfm\src\ExtPtfm_MCKF_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\extptfm\src\ExtPtfm_MCKF.f90"/>
+					<File RelativePath=".\modules\extptfm\src\ExtPtfm_MCKF_IO.f90"/>
+				</Filter>
+				<Filter Name="SubDyn">
+					<Filter Name="RegistryFiles">
+						<File RelativePath=".\modules\subdyn\src\SubDyn_Types.f90">
+							<FileConfiguration Name="Debug|Win32">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+							<FileConfiguration Name="Debug|x64">
+								<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+							</FileConfiguration>
+						</File>
+					</Filter>
+					<File RelativePath=".\modules\subdyn\src\FEM.f90"/>
+					<File RelativePath=".\modules\subdyn\src\IntegerList.f90"/>
+					<File RelativePath=".\modules\subdyn\src\SD_FEM.f90"/>
+					<File RelativePath=".\modules\subdyn\src\SubDyn.f90"/>
+					<File RelativePath=".\modules\subdyn\src\SubDyn_Output.f90"/>
+					<File RelativePath=".\modules\subdyn\src\SubDyn_Output_Params.f90"/>
+					<File RelativePath=".\modules\subdyn\src\SubDyn_Tests.f90"/>
+				</Filter>
+			</Filter>
+			<Filter Name="SuperController_DX">
+				<Filter Name="RegistryFiles">
+					<File RelativePath=".\modules\supercontroller\src\SCDataEX_Types.f90">
+						<FileConfiguration Name="Debug|Win32">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+						<FileConfiguration Name="Debug|x64">
+							<Tool Name="VFFortranCompilerTool" WarnUnusedVariables="false"/>
+						</FileConfiguration>
+					</File>
+				</Filter>
+				<File RelativePath=".\modules\supercontroller\src\SC_DataEx.f90"/>
+			</Filter>
+			<File RelativePath=".\modules\version\src\VersionInfo.f90"/>
+		</Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>

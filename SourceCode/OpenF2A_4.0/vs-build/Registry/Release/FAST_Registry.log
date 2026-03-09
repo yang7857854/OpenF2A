@@ -1,0 +1,10 @@
+﻿  main.cpp
+  registry_gen_c.cpp
+  registry_gen_fortran.cpp
+  registry_parse.cpp
+  registry.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2526 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  FAST_Registry.vcxproj -> H:\StudyJeyla\Research\NWTC\OpenFAST\v4.0.0\openfast-main\build\bin\Registry.exe

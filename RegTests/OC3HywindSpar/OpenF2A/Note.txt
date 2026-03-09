@@ -1,0 +1,7 @@
+Note by Yang for the OC3 Hywind Spar model
+
+The dynamics of the spar model are signficantly influenced by the platform acceleration as the CM is far below the MSL. 
+However, the platform accelerations are transferred from AQWA based on a backward difference of velocity. The inevitably numerical errors may result in instability of the simulation.
+Therefore, we need to set a moderate initial condition in mitigate the transient effect during the start-up stage.
+
+In the example, I have set a zero initial rotor speed, and 5 degs of the blade pitch, which allows the inflow wind (11.4m/s turbulent wind) to produce sufficient torque to moderately start the turbine. 
