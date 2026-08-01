@@ -1,0 +1,5 @@
+The geometry of the floater is slightly different from the original 22MW platform defined in the report "Definition of the IEA Wind 22-Megawatt Offshore Reference Wind Turbine" by Zahle et al that can be accessed via: https://iea-wind.org/wp-content/uploads/2024/04/iea-22-280-rwt-report.pdf#page=41.07.
+
+The floating platform given in this case is improved by Mr. Guangchuan Hu who was my master student, based on the 15MW volturnUS platform. The potoons of this platform is flat, not cylinders like the original design.
+
+The platform details can be found in the publication: Hu G, Ding J, Lai Y, et al. Coupled dynamic behavior of a floating offshore wind turbine integrated with flapping-type-wave energy converters under wind-wave misalignment conditions[J]. Ocean Engineering, 2026, 353: 124816.  

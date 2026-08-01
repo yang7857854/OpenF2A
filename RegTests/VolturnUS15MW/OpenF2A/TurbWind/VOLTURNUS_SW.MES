@@ -1,0 +1,19 @@
+
+ **** MODELLING WARNING **** WHEN AQWA IS *NOT* RUN FROM WORKBENCH, ONLY 2 PARAMETERS (RESOLUTION) ARE ALLOWED ON THE 
+                             SEAG CARD. DEFAULT VALUES HAVE BEEN USED FOR THE GRID SIZE.
+ ----------------------------------------------------------------------------------------------------------------------
+
+ **** INPUT DATA WARNING **** CURRENT-AT-DEPTH IGNORED FOR MORISON-TYPE HULL DRAG. CURRENT AT COG USED
+ ------------------------------------------------------------------------------------------------------
+       ECAX                            0.        0.        0.                    
+       ****                                                                      
+ **** INPUT DATA WARNING:LINE 16438 COEFFICIENTS ZERO. POLYNOMIAL WITH CONSTANT AXIAL STIFFNESS ONLY USED.
+ ----------------------------------------------------------------------------------------------------------
+
+ **** INPUT DATA WARNING **** 0 OF 1 structural total initial velocities are defined by VEL*/VE** cards in Deck 15. The 
+                              total initial velocities of the remaining structures are considered to be the same as the 
+                              slow initial velocities
+ ------------------------------------------------------------------------------------------------------------------------
+
+ **** SYSTEM WARNING **** CABRUN:CURRENT WAVE SPECTRA GROUP# < 1
+ --------------------------------------------------------------------------------
